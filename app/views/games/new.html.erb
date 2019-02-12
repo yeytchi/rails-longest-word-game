@@ -1,0 +1,17 @@
+<h1>Games#new</h1>
+
+<div>
+  <ul>
+    <% @letters.each do |letter| %>
+      <li><%= letter %></li>
+    <% end %>
+  </ul>
+</div>
+
+
+<form action="http://localhost:3000/score">
+  <input type="text" name="word" placeholder="Word" class="entry">
+  <input type="submit" value="PLAY" class="btn">
+</form>
+
+
